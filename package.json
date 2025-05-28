@@ -4,15 +4,12 @@
   "engines": { "node": "20.x" },
 
   "scripts": {
-    // Heroku: compile UI + server
     "heroku-postbuild": "npm --prefix client run build && npm --prefix server run build",
-    // Local convenience
     "dev": "concurrently \"npm --prefix client run dev\" \"npm --prefix server run dev\"",
-    // Runs the compiled server (Heroku web dyno)
     "start": "node server/dist/index.js"
   },
 
-  "devDependencies": {
+  "devDependencies":
     "concurrently": "^8"
   }
 }
