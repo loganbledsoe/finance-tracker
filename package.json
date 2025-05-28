@@ -9,7 +9,7 @@
     "start": "node server/dist/index.js"
   },
 
-  "devDependencies":
+  "devDependencies": {
     "concurrently": "^8"
   }
 }
