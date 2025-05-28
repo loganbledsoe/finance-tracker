@@ -1,14 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getTransactions } from "../api";
 
-interface Transaction {
-  id: number;
-  amount: number;
-  date: string;
-  category_id: number;
-  description: string;
-}
-
 interface SummaryData {
   totalIncome: number;
   totalExpenses: number;

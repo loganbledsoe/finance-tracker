@@ -16,3 +16,6 @@ dist/
 
 # System files
 .DS_Store
+
+#Database
+*.sqlite3

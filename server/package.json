@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch src --exec ts-node src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "migrate": "knex migrate:latest --knexfile dist/knexfile.js --env production",
+    "add-user": "ts-node addUser.ts",
+    "postrelease": "npm run migrate && npm run add-user"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +19,8 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "knex": "^3.1.0",
-    "mysql2": "^3.14.1"
+    "mysql2": "^3.14.1",
+    "ts-node": "^10"
   },
   "devDependencies": {
     "@types/cors": "^2.8.18",

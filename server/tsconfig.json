@@ -15,6 +15,6 @@
       "knexfile": ["knexfile.ts"]
     }
   },
-  "include": ["src/**/*.ts", "knexfile.ts", "addUser.ts"],
+  "include": ["src/**/*.ts", "knexfile.ts"],
   "exclude": ["node_modules"]
 }
