@@ -10,8 +10,8 @@ const config: { [key: string]: Knex.Config } = {
       filename: "./test.sqlite3",
     },
     useNullAsDefault: true,
-    migrations: { directory: "./src/migrations" },
-    seeds: { directory: "./src/seeds" },
+    migrations: { directory: "../src/migrations" },
+    seeds: { directory: "../src/seeds" },
   },
   production: {
     client: "pg",
