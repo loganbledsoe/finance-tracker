@@ -1,5 +1,5 @@
 // src/api.ts
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const BASE_URL = import.meta.env.VITE_API_URL || window.location.origin;
 const USER_ID = "1"; // temporary hardcoded user ID for testing
 
 interface Category {
