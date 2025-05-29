@@ -7,7 +7,7 @@
     "build": "tsc",
     "migrate": "knex migrate:latest --knexfile dist/knexfile.js --env production",
     "add-user": "ts-node addUser.ts",
-    "postrelease": "npm run migrate && npm run add-user"
+    "start:prod": "npm run migrate && npm run add-user && node dist/index.js"
   },
   "keywords": [],
   "author": "",
