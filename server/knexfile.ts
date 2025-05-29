@@ -22,8 +22,8 @@ const config: { [key: string]: Knex.Config } = {
     },
     searchPath: ["knex", "public"],
     useNullAsDefault: true,
-    migrations: { directory: path.resolve(__dirname, "../src/migrations") },
-    seeds: { directory: path.resolve(__dirname, "../src/seeds") },
+    migrations: { directory: path.resolve(__dirname, "./src/migrations") },
+    seeds: { directory: path.resolve(__dirname, "./src/seeds") },
   },
 };
 
