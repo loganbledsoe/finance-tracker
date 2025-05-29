@@ -12,9 +12,9 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "knexfile": ["knexfile.ts"]
+      "knexfile": ["knexfile.js"]
     }
   },
-  "include": ["src/**/*.ts", "knexfile.ts"],
+  "include": ["src/**/*.ts", "knexfile.js"],
   "exclude": ["node_modules"]
 }
