@@ -24,8 +24,8 @@ const config = {
         },
         searchPath: ["knex", "public"],
         useNullAsDefault: true,
-        migrations: { directory: path_1.default.resolve(__dirname, "./migrations") },
-        seeds: { directory: path_1.default.resolve(__dirname, "./seeds") },
+        migrations: { directory: path_1.default.resolve(__dirname, "./dist/migrations") },
+        seeds: { directory: path_1.default.resolve(__dirname, "./dist/seeds") },
     },
 };
 exports.default = config;
