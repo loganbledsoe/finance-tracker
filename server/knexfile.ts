@@ -17,7 +17,8 @@ const config: { [key: string]: Knex.Config } = {
   production: {
     client: "pg",
     connection: {
-      connectionString: process.env.PG_CONNECTION_STRING,
+      connectionString:
+        process.env.PG_CONNECTION_STRING || process.env.DATABASE_URL,
       ssl: { rejectUnauthorized: false },
     },
     searchPath: ["knex", "public"],
