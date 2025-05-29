@@ -1,5 +1,6 @@
 import type { Knex } from "knex";
 import dotenv from "dotenv";
+import path from "path";
 
 dotenv.config();
 
@@ -21,8 +22,8 @@ const config: { [key: string]: Knex.Config } = {
     },
     searchPath: ["knex", "public"],
     useNullAsDefault: true,
-    migrations: { directory: "./src/migrations" },
-    seeds: { directory: "./src/seeds" },
+    migrations: { directory: path.resolve(__dirname, "../src/migrations") },
+    seeds: { directory: path.resolve(__dirname, "../src/seeds") },
   },
 };
 
