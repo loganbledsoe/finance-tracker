@@ -13,6 +13,15 @@ const config: { [key: string]: Knex.Config } = {
     migrations: { directory: "./src/migrations" },
     seeds: { directory: "./src/seeds" },
   },
+  production: {
+    client: "better-sqlite3",
+    connection: {
+      filename: "/tmp/finance.sqlite3",
+    },
+    useNullAsDefault: true,
+    migrations: { directory: "./src/migrations" },
+    seeds: { directory: "./src/seeds" },
+  },
 };
 
 export default config;
